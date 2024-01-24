@@ -9,7 +9,7 @@ function initMap() {
   const directionsService = new google.maps.DirectionsService();
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 14,
-    center: { lat: 37.77, lng: -122.447 },
+    center: { lat: 28.20, lng: 83.98 },
   });
 
   directionsRenderer.setMap(map);
@@ -24,8 +24,8 @@ function calculateAndDisplayRoute(directionsService, directionsRenderer) {
 
   directionsService
     .route({
-      origin: { lat: 37.77, lng: -122.447 },
-      destination: { lat: 37.768, lng: -122.511 },
+      origin: { lat: 28.20, lng: 83.98 },
+      destination: { lat: 28.24, lng: 83.95 },
       // Note that Javascript allows us to access the constant
       // using square brackets and a string value as its
       // "property."
