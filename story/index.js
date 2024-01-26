@@ -28,7 +28,7 @@ function initMap() {
       //First Marker:
     const TOKYOContent = 
     "Tōkyō Station (Japanese: 東京駅, pronounced [to̞ːkʲo̞ːe̞kʲi]) is a major railway station in Chiyoda, Tokyo, Japan.Served by the high-speed rail lines of the Shinkansen network, Tōkyō Station is the main inter-city rail terminal in Tokyo. It is the busiest station in Japan, with more than 4,000 trains arriving and departing daily,[1] and the fifth-busiest in eastern Japan in terms of passenger throughput;[2] on average, more than 500,000 people use Tōkyō Station every day.[1] The station is also served by many regional commuter lines of Japan Railways, as well as the Tokyo Metro network.Attribution: TOKYO STATION, 
-    //<a href="https://en.wikipedia.org/wiki/Tokyo_Station">"</a>;//
+    //<a href="https://en.wikipedia.org/wiki/Tokyo_Station">"</a>;
   const TOKYOinfowindow = new google.maps.InfoWindow({
     content: TOKYOContent,
     ariaLabel: "Tokyo Station"
@@ -110,7 +110,7 @@ function initMap() {
 //Fifth Marker:
   const HIROSAKIContent = 
   " Hirosaki Castle (弘前城, Hirosaki-jō) is a hirayama-style Japanese castle constructed in 1611. It was the seat of the Tsugaru clan, a 47,000 koku tozama daimyō clan who ruled over Hirosaki Domain, Mutsu Province, in what is now central Hirosaki, Aomori Prefecture, Japan. It was also referred to as Takaoka Castle (鷹岡城 or 高岡城, Takaoka-jō)..Attribution: HIROSAKI CASTLE, 
-  //<a href="https://en.wikipedia.org/wiki/Hirosaki_Castle>"></a>//
+  //<a href="https://en.wikipedia.org/wiki/Hirosaki_Castle>"></a>;
   const HIROSAKIinfowindow = new google.maps.InfoWindow({
     content: HIROSAKIContent,
     ariaLabel: "HIROSAKI CASTLE",
@@ -130,7 +130,7 @@ function initMap() {
 //Sixth Marker:
   const RYUSENDOContent = 
  "Ryūsendō (龍泉洞) is one of Japan's three largest limestone caverns.[1] It is located in the town of Iwaizumi, Iwate Prefecture, in the Tōhoku region of northern Japan.Ryūsendō has an accessible length of 1,200 meters, making it the 62nd longest in Japan; however, its depth of 249 metres (817 ft) from the entrance to its lowest point is the 5th deepest in Japan. The total confirmed length of the cave is currently 3,631 metres (11,913 ft), although the cave may extend much further. Further exploration has been banned following a fatality in December 1968. The cave system includes at least four underground lakes, the third of which has a depth of 98 metres (322 ft), and the fourth of which (not accessible to the public) has a depth of over 120 metres (390 ft). The cave system is also home to colonies of Greater horseshoe bat, Eastern long-fingered bat, Brown long-eared bat and Hilgendorf's tube-nosed bat as well as Microbats.Attribution: Ryūsendō, 
- //<a href="https://en.wikipedia.org/wiki/Ry%C5%ABsend%C5%8D">"</a>//
+ //<a href="https://en.wikipedia.org/wiki/Ry%C5%ABsend%C5%8D">"</a>;
   const RYUSENDOinfowindow = new google.maps.InfoWindow({
     content: RYUSENDOContent,
     ariaLabel: "Ryūsendō",
@@ -150,7 +150,7 @@ function initMap() {
 //Seventh Marker:
   const MORIOKAcontent = 
   "Morioka Castle (盛岡城, Morioka-jō) is a hirayama-style Japanese castle constructed in 1611. It was the seat of the Nanbu clan, a tozama daimyō clan who ruled over Morioka Domain, Mutsu Province in the Tōhoku region of northern Japan during the Edo period Tokugawa shogunate. The castle is located in what is now the center of the city of Morioka, Iwate Prefecture, Japan. It was also referred to as Kozukata Castle (不来方城, Kozukata-jō), but strictly speaking this name pertains to the predecessor of Morioka Castle on the same site..Attribution: Morioka Castle, 
-  //<a href="https://en.wikipedia.org/wiki/Morioka_Castle"></a>"//
+  //<a href="https://en.wikipedia.org/wiki/Morioka_Castle"></a>";
   const MORIOKAinfowindow = new google.maps.InfoWindow({
     content: MORIOKAcontent,
     ariaLabel: "MORIOKA CASTLE",
@@ -170,7 +170,7 @@ function initMap() {
 /Eighth Marker:
   const NAMAHAGEContent = 
   "The Namahage (生剥げ, なまはげ)[1] are demonlike beings portrayed by men wearing hefty oni (ogre) masks and traditional straw capes (mino) during a New Year's ritual, in local northern Japanese folklore of the Oga Peninsula area of Akita Prefecture.Oga City's Namahage Museum highlights all things Namahage through various displays. The Namahage Seizoroi Corner features masks and costumes from 60 districts around Oga. The Shinpi Hall explores the nature and customs of Oga, and the Densho Hall features a large screen which plays a film showcasing the Namahage Festival on New Year's Eve. At the Namahage Transformation Corner, visitors can try on authentic Namahage costumes for themselves..Attribution: TOKYO STATION, 
-  //<a href="https://en.wikipedia.org/wiki/Namahage">"</a>//
+  //<a href="https://en.wikipedia.org/wiki/Namahage">"</a>;
   const NAMAHAGEinfowindow = new google.maps.InfoWindow({
     content: NAMAHAGEContent,
     ariaLabel: "NAMAHAGE MUSEUM",
@@ -190,7 +190,7 @@ function initMap() {
 //Ninth Marker:
   const YAMAGATAContent = 
   "Yamagata Castle (山形城, Yamagata-jō) is a flatland-style Japanese castle located in the center of the city of Yamagata, eastern Yamagata Prefecture, Japan. Throughout the Edo period, Yamagata Castle was the headquarters for the daimyō of Yamagata Domain. The castle was also known as "Ka-jō" (霞城). The castle grounds are protected as a National Historic Site by the Japanese government.Attribution: Yamagata Castle, 
-  //<a href="https://en.wikipedia.org/wiki/Yamagata_Castle"></a>"//
+  //<a href="https://en.wikipedia.org/wiki/Yamagata_Castle"></a>";
   const YAMAGATAinfowindow = new google.maps.InfoWindow({
     content: YAMAGATAContent,
     ariaLabel: "YAMAGATA CASTLE",
@@ -209,7 +209,7 @@ function initMap() {
 });
   const OKAMAContent = 
   "Okama (Japanese: 御釜), meaning an honourable cauldron, is the inactive volcanic crater (crater lake) on top of Mount Zaō, located in Kawasaki, Miyagi, on the border with Yamagata, Japan. While local people call it affectionately Okama, the visitors tend to call it Goshiki-numa (五色沼), meaning Five Color Pond, because its color changes depending on the time of the day, the weather, or the season of the year.Attribution: Okama Crater Lake, 
-  //<a href="https://en.wikipedia.org/wiki/Okama_Crater_Lake"></a>"//;
+  //<a href="https://en.wikipedia.org/wiki/Okama_Crater_Lake"></a>";
   const OKAMAinfowindow = new google.maps.InfoWindow({
     content: OKAMAContent,
     ariaLabel: "OKAMA CRATER LAKE",
@@ -229,7 +229,7 @@ function initMap() {
 //Tenth Marker:
   const YAMADERAContent = 
   "Yama-dera (山寺, lit. Mountain Temple), (山号 宝珠山; Sangō Hōshu-zan) is the popular name for the Buddhist temple of Risshaku-ji (立石寺) located northeast of Yamagata City, in Yamagata Prefecture, Japan. Its main image is a hibutsu statue of Yakushi Nyōrai. The temple has been a place for pilgrimage for centuries, and is designated as both a Place of Scenic Beauty and as a National Historic Site[1] It is located within the borders of the Zaō Quasi-National Park. The temple buildings clinging to the steep, forested, rocky hillsides are picturesque and unusual.Attribution: Yama-dera,
-  // <a href="https://en.wikipedia.org/wiki/Yama-dera"></a>"//
+  // <a href="https://en.wikipedia.org/wiki/Yama-dera"></a>";
   const YAMADERAinfowindow = new google.maps.InfoWindow({
     content: YAMADERAContent,
     ariaLabel: "Yama-dera"
@@ -248,4 +248,4 @@ const YAMADERAMarker = new google.maps.Marker({
 });
 
 }
-window.initMap = initMapcontent = 
+window.initMap = initMap; 
