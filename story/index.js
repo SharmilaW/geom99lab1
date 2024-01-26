@@ -12,8 +12,8 @@ function initMap() {
     const OKAMA = { lat: 38.13633248475617, lng: 140.44956729592093 }; 
     const KANAZAWA = { lat: 36.5854380667408, lng: 136.6643875516741 }; 
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 8,
-      center: { lat: 39.8602655829315, lng: 141.797015753679 }, 
+      zoom: 5,
+      center: { lat: 37.48803260041316, lng: 139.92973006890315}, 
     });
     
 
@@ -69,7 +69,7 @@ const KYOTOMarker = new google.maps.Marker({
 //Third Marker:
 const FUKUSHIMAContent = 
 "Aizu-Wakamatsu Castle (会津若松城, Aizu-Wakamatsu-jō), also known as Tsuruga Castle (鶴ヶ城 Tsuru-ga-jō) is a Japanese castle in northern Japan, at the center of the city of Aizuwakamatsu, in Fukushima Prefecture.Aizu Wakamatsu Castle is located in the center of the Aizu basin and at crossroads to Kōriyama to the north and Yonezawa to the east and Murakami on the Sea of Japan coast. Attribution: Aizuwakamatsu Castle."
-// <a href="https://en.wikipedia.org/wiki/Aizuwakamatsu_Castle">"</a>;//
+// <a href="https://en.wikipedia.org/wiki/Aizuwakamatsu_Castle">"</a>;
 const FUKUSHIMAinfowindow = new google.maps.InfoWindow({
   content: FUKUSHIMAContent,
   ariaLabel: "Aizuwakamatsu Castle",
@@ -89,7 +89,7 @@ FUKUSHIMAMarker.addListener("click", () => {
 //Fourth Marker:
 const TOWADAContent = 
 " Towada-Hachimantai National Park (十和田八幡平国立公園, Towada-Hachimantai Kokuritsu Kōen) is a national park comprising two separate areas of Aomori, Iwate, and Akita Prefectures, Japan. The Towada-Hakkōda area encompasses Lake Towada, Mount Hakkōda, and most of the Oirase River valley. The Hachimantai area includes Mount Hachimantai, Mount Iwate, Tamagawa Onsen, and Akita Komagatake (秋田駒ヶ岳).[1][2] The two areas are 50 kilometres (31 mi) apart, and cover 854 square kilometres (330 sq mi)..Attribution: Towada-Hachimantai National Park."
-//<a href="https://en.wikipedia.org/wiki/Towada-Hachimantai_National_Park">"</a>;//
+//<a href="https://en.wikipedia.org/wiki/Towada-Hachimantai_National_Park">"</a>;
 const TOWADAinfowindow = new google.maps.InfoWindow({
   content: TOWADAContent,
   ariaLabel: "Towada-Hachimantai National Park",
