@@ -1,16 +1,16 @@
 function initMap() {
   // changed the pins into variables for optimization purposes
     const TOKYO = { lat: 35.68137999342221, lng: 139.76713552883564 }; 
-    const INAWASHIRO = { lat: 37.46760868372383, lng: 140.04733240489307 };
+    const KYOTO = { lat: 35.3386463081338, lng: 135.78165306284905 };
     const FUKUSHIMA = { lat: 37.48803260041316, lng: 139.92973006890315 };
     const TOWADA = { lat: 40.561708416188054, lng: 140.88740008053503 }; 
     const HIROSAKI = { lat: 40.60790615607367, lng: 140.46435677116432 };
     const RYUSENDO = { lat: 39.8602655829315, lng: 141.797015753679 }; 
     const MORIOKA = { lat: 39.70078749866131, lng: 141.15135829572606 }; 
     const NAMAHAGE = { lat: 39.92947266214928, lng: 139.76665789601114 }; 
-    const YAMAGATA = { lat: 38.25569596959157, lng: 140.32776969592692 }; 
+    const SENDAI = { lat: 38.25236750172602, lng: 140.85594756211142 };  
     const OKAMA = { lat: 38.13633248475617, lng: 140.44956729592093 }; 
-    const YAMADERA = { lat: 38.316284479407855, lng: 140.43409491290072 }; 
+    const KANAZAWA = { lat: 36.5854380667408, lng: 136.6643875516741 }; 
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 8,
       center: { lat: 39.8602655829315, lng: 141.797015753679 }, 
@@ -47,22 +47,22 @@ TOKYOMarker.addListener("click", () => {
     
     
 //Second Marker://
-  const INAWASHIROContent = 
-  "Lake Inawashiro (猪苗代湖, Inawashiro-ko) is the fourth-largest lake in Japan,[1] located in central Fukushima Prefecture, south of Mount Bandai. It is also known as the 'Heavenly Mirror Lake' (天鏡湖, Tenkyōko). The lake is located within the borders of Bandai-Asahi National Park. It is a surface area of 104 square kilometres (40 sq mi), circumference of 63 kilometres (39 mi), depth of 94 metres (308 ft) and is located at an altitude of 514 metres (1,686 ft).[2] In winter swans migrate to the beaches of the lake and stay there until spring. .Attribution: Inawashiro Lake."
-  //<a href="https://en.wikipedia.org/wiki/Lake_Inawashiro">"</a>//
-  const INAWASHIROinfowindow = new google.maps.InfoWindow({
-    content: INAWASHIROContent,
+  const KYOTOContent = 
+  "Kinkaku-ji (金閣寺, literally Temple of the Golden Pavilion), officially named Rokuon-ji (鹿苑寺, lit.'Deer Garden Temple'), is a Zen Buddhist temple in Kyoto, Japan.[2] It is one of the most popular buildings in Kyoto, attracting many visitors annually.[3] It is designated as a National Special Historic Site, a National Special Landscape and is one of 17 locations making up the Historic Monuments of Ancient Kyoto which are World Heritage Sites."
+  //<a href="https://en.wikipedia.org/wiki/Kinkaku-ji">"</a>//
+  const KYOTOinfowindow = new google.maps.InfoWindow({
+    content: KYOTOContent,
     ariaLabel: "Inawashiro Lake",
   });
-const INAWASHIROMarker = new google.maps.Marker({
-  position: INAWASHIRO,
+const KYOTOMarker = new google.maps.Marker({
+  position: KYOTO,
   map,
   title: "Inawashiro Lake",
   });
 
-INAWASHIROMarker.addListener("click", () => {
-  INAWASHIROinfowindow.open({
-  anchor: INAWASHIROMarker,
+  KYOTOMarker.addListener("click", () => {
+    KYOTOinfowindow.open({
+  anchor: KYOTOMarker,
   map,
     });
 });
@@ -187,22 +187,22 @@ NAMAHAGEMarker.addListener("click", () => {
     });
 });
 //Ninth Marker:
-const YAMAGATAContent = 
-"Yamagata Castle (山形城, Yamagata-jō) is a flatland-style Japanese castle located in the center of the city of Yamagata, eastern Yamagata Prefecture, Japan. Throughout the Edo period, Yamagata Castle was the headquarters for the daimyō of Yamagata Domain. The castle was also known as Ka-jō (霞城). The castle grounds are protected as a National Historic Site by the Japanese government.Attribution: Yamagata Castle."
-//<a href="https://en.wikipedia.org/wiki/Yamagata_Castle"></a>";
-const YAMAGATAinfowindow = new google.maps.InfoWindow({
-  content: YAMAGATAContent,
-  ariaLabel: "YAMAGATA CASTLE",
+const SENDAIContent = 
+"Aoba Castle (青葉城, Aoba-jō) is a Japanese castle located in Sendai, Miyagi Prefecture, Japan. Throughout the Edo period, Aoba Castle was home to the Date clan, daimyō of Sendai Domain. The castle was also known as Sendai-jō (仙台城) or as Gojō-rō (五城楼). In 2003, the castle ruins were designated a National Historic Site."
+//<a href="https://en.wikipedia.org/wiki/Aoba_Castle"></a>";
+const SENDAIinfowindow = new google.maps.InfoWindow({
+  content: SENDAIContent,
+  ariaLabel: "Aoba Castle",
 });
-const YAMAGATAMarker = new google.maps.Marker({
-  position: YAMAGATA,
+const SENDAIMarker = new google.maps.Marker({
+  position: SENDAI,
   map,
-  title: "YAMAGATA CASTLE",
+  title: "Aoba Castle",
 });
 
-YAMAGATAMarker.addListener("click", () => {
-  YAMAGATAinfowindow.open({
-    anchor: YAMAGATAMarker,
+SENDAIMarker.addListener("click", () => {
+  SENDAIinfowindow.open({
+    anchor: SENDAIMarker,
     map,
     });
 });
@@ -226,22 +226,22 @@ OKAMAMarker.addListener("click", () => {
   });
 });
 //Tenth Marker:
-const YAMADERAContent = 
-"Yama-dera (山寺, lit. Mountain Temple), (山号 宝珠山; Sangō Hōshu-zan) is the popular name for the Buddhist temple of Risshaku-ji (立石寺) located northeast of Yamagata City, in Yamagata Prefecture, Japan. Its main image is a hibutsu statue of Yakushi Nyōrai. The temple has been a place for pilgrimage for centuries, and is designated as both a Place of Scenic Beauty and as a National Historic Site[1] It is located within the borders of the Zaō Quasi-National Park. The temple buildings clinging to the steep, forested, rocky hillsides are picturesque and unusual.Attribution: Yama-dera."
-// <a href="https://en.wikipedia.org/wiki/Yama-dera"></a>";
-const YAMADERAinfowindow = new google.maps.InfoWindow({
-  content: YAMADERAContent,
-  ariaLabel: "Yama-dera"
+const KANAZAWAContent = 
+"Kenroku-en (Japanese: 兼六園, Garden of Six Attributes), located in Kanazawa, Ishikawa, Japan, is a strolling style garden constructed during the Edo period by the Maeda clan.[1] Along with Kairaku-en and Kōraku-en, Kenroku-en is considered one of the Three Great Gardens of Japan and is noted for its beauty across all seasons, particularly in winter. Spread over nearly 25 acres, features of the landscape include meandering paths, a large pond, several tea houses, and one of Japan's oldest fountains."
+// <a href="https://en.wikipedia.org/wiki/Kenroku-en"></a>";
+const KANAZAWAinfowindow = new google.maps.InfoWindow({
+  content: KANAZAWAContent,
+  ariaLabel: "Kenroku-en"
 });
-const YAMADERAMarker = new google.maps.Marker({
-  position: YAMADERA,
+const KANAZAWAMarker = new google.maps.Marker({
+  position: KANAZAWA,
   map,
-  title: "Yama-dera",
+  title: "Kenroku-en",
 });
 
-YAMADERAMarker.addListener("click", () => {
-  YAMADERAinfowindow.open({
-    anchor: YAMADERAMarker,
+KANAZAWAMarker.addListener("click", () => {
+  KANAZAWAinfowindow.open({
+    anchor: KANAZAWAMarker,
     map,
     });
 });
