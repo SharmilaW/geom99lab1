@@ -12,7 +12,7 @@ function initMap() {
     const OKAMA = { lat: 38.13633248475617, lng: 140.44956729592093 }; 
     const YAMADERA = { lat: 38.316284479407855, lng: 140.43409491290072 }; 
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 5,
+      zoom: 8,
       center: { lat: 39.8602655829315, lng: 141.797015753679 }, 
     });
     
@@ -51,8 +51,8 @@ TOKYOMarker.addListener("click", () => {
   "Lake Inawashiro (猪苗代湖, Inawashiro-ko) is the fourth-largest lake in Japan,[1] located in central Fukushima Prefecture, south of Mount Bandai. It is also known as the 'Heavenly Mirror Lake' (天鏡湖, Tenkyōko). The lake is located within the borders of Bandai-Asahi National Park. It is a surface area of 104 square kilometres (40 sq mi), circumference of 63 kilometres (39 mi), depth of 94 metres (308 ft) and is located at an altitude of 514 metres (1,686 ft).[2] In winter swans migrate to the beaches of the lake and stay there until spring. .Attribution: Inawashiro Lake."
   //<a href="https://en.wikipedia.org/wiki/Lake_Inawashiro">"</a>//
   const INAWASHIROinfowindow = new google.maps.InfoWindow({
-  content: INAWASHIROContent,
-  ariaLabel: "Inawashiro Lake",
+    content: INAWASHIROContent,
+    ariaLabel: "Inawashiro Lake",
   });
 const INAWASHIROMarker = new google.maps.Marker({
   position: INAWASHIRO,
@@ -71,40 +71,40 @@ const FUKUSHIMAContent =
 "Aizu-Wakamatsu Castle (会津若松城, Aizu-Wakamatsu-jō), also known as Tsuruga Castle (鶴ヶ城 Tsuru-ga-jō) is a Japanese castle in northern Japan, at the center of the city of Aizuwakamatsu, in Fukushima Prefecture.Aizu Wakamatsu Castle is located in the center of the Aizu basin and at crossroads to Kōriyama to the north and Yonezawa to the east and Murakami on the Sea of Japan coast. Attribution: Aizuwakamatsu Castle."
 // <a href="https://en.wikipedia.org/wiki/Aizuwakamatsu_Castle">"</a>;//
 const FUKUSHIMAinfowindow = new google.maps.InfoWindow({
-content: FUKUSHIMAContent,
-ariaLabel: "Aizuwakamatsu Castle",
+  content: FUKUSHIMAContent,
+  ariaLabel: "Aizuwakamatsu Castle",
 });
 const FUKUSHIMAMarker = new google.maps.Marker({
-position: FUKUSHIMA,
-map,
-title: "Aizuwakamatsu Castle",
+  position: FUKUSHIMA,
+  map,
+  title: "Aizuwakamatsu Castle",
 });
 
 FUKUSHIMAMarker.addListener("click", () => {
-FUKUSHIMAinfowindow.open({
-anchor: FUKUSHIMA,
-map,
-});
+  FUKUSHIMAinfowindow.open({
+    anchor: FUKUSHIMA,
+    map,
+    });
 });
 //Fourth Marker:
 const TOWADAContent = 
 " Towada-Hachimantai National Park (十和田八幡平国立公園, Towada-Hachimantai Kokuritsu Kōen) is a national park comprising two separate areas of Aomori, Iwate, and Akita Prefectures, Japan. The Towada-Hakkōda area encompasses Lake Towada, Mount Hakkōda, and most of the Oirase River valley. The Hachimantai area includes Mount Hachimantai, Mount Iwate, Tamagawa Onsen, and Akita Komagatake (秋田駒ヶ岳).[1][2] The two areas are 50 kilometres (31 mi) apart, and cover 854 square kilometres (330 sq mi)..Attribution: Towada-Hachimantai National Park."
 //<a href="https://en.wikipedia.org/wiki/Towada-Hachimantai_National_Park">"</a>;//
 const TOWADAinfowindow = new google.maps.InfoWindow({
-content: TOWADAContent,
-ariaLabel: "Towada-Hachimantai National Park",
+  content: TOWADAContent,
+  ariaLabel: "Towada-Hachimantai National Park",
 });
 const TOWADAMarker = new google.maps.Marker({
-position: TOWADA,
-map,
-title: "Towada-Hachimantai National Park",
+  position: TOWADA,
+  map,
+  title: "Towada-Hachimantai National Park",
 });
 
 TOWADAMarker.addListener("click", () => {
-TOWADAinfowindow.open({
-anchor: TOWADAMarker,
-map,
-});
+  TOWADAinfowindow.open({
+    anchor: TOWADAMarker,
+    map,
+    });
 });
 //Fifth Marker:
 const HIROSAKIContent = 
@@ -122,9 +122,9 @@ const HIROSAKIMarker = new google.maps.Marker({
 
 HIROSAKIMarker.addListener("click", () => {
   HIROSAKIinfowindow.open({
-  anchor: HIROSAKIMarker,
-  map,
-});
+    anchor: HIROSAKIMarker,
+    map,
+    });
 });
 //Sixth Marker:
 const RYUSENDOContent = 
@@ -142,9 +142,9 @@ const RYUSENDOMarker = new google.maps.Marker({
 
 RYUSENDOMarker.addListener("click", () => {
   RYUSENDOinfowindow.open({
-  anchor: RYUSENDOMarker,
-  map,
-});
+    anchor: RYUSENDOMarker,
+    map,
+    });
 });
 //Seventh Marker:
 const MORIOKAcontent = 
@@ -162,9 +162,9 @@ const MORIOKAMarker = new google.maps.Marker({
 
 MORIOKAMarker.addListener("click", () => {
   MORIOKAinfowindow.open({
-  anchor: MORIOKAMarker,
-  map,
-});
+    anchor: MORIOKAMarker,
+    map,
+    });
 });
 //Eighth Marker:
 const NAMAHAGEContent = 
@@ -182,9 +182,9 @@ const NAMAHAGEMarker = new google.maps.Marker({
 
 NAMAHAGEMarker.addListener("click", () => {
   NAMAHAGEinfowindow.open({
-  anchor: NAMAHAGEMarker,
-  map,
-  });
+    anchor: NAMAHAGEMarker,
+    map,
+    });
 });
 //Ninth Marker:
 const YAMAGATAContent = 
@@ -202,9 +202,9 @@ const YAMAGATAMarker = new google.maps.Marker({
 
 YAMAGATAMarker.addListener("click", () => {
   YAMAGATAinfowindow.open({
-  anchor: YAMAGATAMarker,
-  map,
-  });
+    anchor: YAMAGATAMarker,
+    map,
+    });
 });
 const OKAMAContent = 
 "Okama (Japanese: 御釜), meaning an honourable cauldron, is the inactive volcanic crater (crater lake) on top of Mount Zaō, located in Kawasaki, Miyagi, on the border with Yamagata, Japan. While local people call it affectionately Okama, the visitors tend to call it Goshiki-numa (五色沼), meaning Five Color Pond, because its color changes depending on the time of the day, the weather, or the season of the year.Attribution: Okama Crater Lake."
@@ -221,8 +221,8 @@ const OKAMAMarker = new google.maps.Marker({
 
 OKAMAMarker.addListener("click", () => {
   OKAMAinfowindow.open({
-  anchor: OKAMAMarker,
-  map,
+    anchor: OKAMAMarker,
+    map,
   });
 });
 //Tenth Marker:
@@ -234,16 +234,16 @@ const YAMADERAinfowindow = new google.maps.InfoWindow({
   ariaLabel: "Yama-dera"
 });
 const YAMADERAMarker = new google.maps.Marker({
-position: YAMADERA,
-map,
-title: "Yama-dera",
+  position: YAMADERA,
+  map,
+  title: "Yama-dera",
 });
 
 YAMADERAMarker.addListener("click", () => {
   YAMADERAinfowindow.open({
-  anchor: YAMADERAMarker,
-  map,
-  });
+    anchor: YAMADERAMarker,
+    map,
+    });
 });
 
 }
