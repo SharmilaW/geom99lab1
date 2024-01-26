@@ -11,6 +11,7 @@ function initMap() {
     const SENDAI = { lat: 38.25236750172602, lng: 140.85594756211142 };  
     const OKAMA = { lat: 38.13633248475617, lng: 140.44956729592093 }; 
     const KANAZAWA = { lat: 36.5854380667408, lng: 136.6643875516741 }; 
+    const FUJI = { lat: 35.36074700281356, lng: 138.72736328044655 };
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 5,
       center: { lat: 37.48803260041316, lng: 139.92973006890315}, 
@@ -242,6 +243,26 @@ const KANAZAWAMarker = new google.maps.Marker({
 KANAZAWAMarker.addListener("click", () => {
   KANAZAWAinfowindow.open({
     anchor: KANAZAWAMarker,
+    map,
+    });
+});
+//Eleventh Marker:
+const FUJIContent = 
+"Mount Fuji (富士山, Fujisan) is an active stratovolcano located on the Japanese island of Honshū, with a summit elevation of 3,776.24 m (12,389 ft 3 in). It is the tallest mountain in Japan, the second-highest volcano located on an island in Asia (after Mount Kerinci on the island of Sumatra), and seventh-highest peak of an island on Earth.[1] Mount Fuji last erupted from 1707 to 1708.[4][5] The mountain is located about 100 km (62 mi) southwest of Tokyo and is visible from the Japanese capital on clear days. Mount Fuji's exceptionally symmetrical cone, which is covered in snow for about five months of the year, is commonly used as a cultural icon of Japan and is frequently depicted in art and photography, as well as visited by sightseers, hikers and mountain climbers."
+// <a href="https://en.wikipedia.org/wiki/Mount_Fuji"></a>";
+const FUJIinfowindow = new google.maps.InfoWindow({
+  content: FUJIContent,
+  ariaLabel: "Mount Fuji"
+});
+const FUJIMarker = new google.maps.Marker({
+  position: FUJI,
+  map,
+  title: "Mount Fuji",
+});
+
+FUJIMarker.addListener("click", () => {
+  FUJIinfowindow.open({
+    anchor: FUJIMarker,
     map,
     });
 });
