@@ -12,7 +12,7 @@ function initMap() {
     const OKAMA = { lat: 38.13633248475617, lng: 140.44956729592093 }; 
     const YAMADERA = { lat: 38.316284479407855, lng: 140.43409491290072 }; 
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 3,
+      zoom: 5,
       center: { lat: 39.8602655829315, lng: 141.797015753679 }, 
     });
     
@@ -51,11 +51,11 @@ TOKYOMarker.addListener("click", () => {
   "Lake Inawashiro (猪苗代湖, Inawashiro-ko) is the fourth-largest lake in Japan,[1] located in central Fukushima Prefecture, south of Mount Bandai. It is also known as the 'Heavenly Mirror Lake' (天鏡湖, Tenkyōko). The lake is located within the borders of Bandai-Asahi National Park. It is a surface area of 104 square kilometres (40 sq mi), circumference of 63 kilometres (39 mi), depth of 94 metres (308 ft) and is located at an altitude of 514 metres (1,686 ft).[2] In winter swans migrate to the beaches of the lake and stay there until spring. .Attribution: Inawashiro Lake."
   //<a href="https://en.wikipedia.org/wiki/Lake_Inawashiro">"</a>//
   const INAWASHIROinfowindow = new google.maps.InfoWindow({
-  content: InawashiroContent,
+  content: INAWASHIROContent,
   ariaLabel: "Inawashiro Lake",
   });
 const INAWASHIROMarker = new google.maps.Marker({
-  position: Inawashiro,
+  position: INAWASHIRO,
   map,
   title: "Inawashiro Lake",
   });
