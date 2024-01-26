@@ -14,7 +14,7 @@ function initMap() {
     const KANAZAWA = { lat: 36.5854380667408, lng: 136.6643875516741 }; 
     const FUJI = { lat: 35.36074700281356, lng: 138.72736328044655 };
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 5.5,
+      zoom: 6,
       center: { lat: 37.48803260041316, lng: 139.92973006890315}, 
     });
     
