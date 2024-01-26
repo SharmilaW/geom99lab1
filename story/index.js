@@ -1,3 +1,4 @@
+//The Templates are used from Google Maps Platfor template(s) you use:https://developers.google.com/maps/documentation/javascript/reference:
 function initMap() {
   // changed the pins into variables for optimization purposes
     const TOKYO = { lat: 35.68137999342221, lng: 139.76713552883564 }; 
